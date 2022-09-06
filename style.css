@@ -1,0 +1,622 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    height: 7vh;
+}
+
+li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: #212121;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn-call{
+    background: #4361ee;
+    color: #FFF;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    border: 0;
+    width: 80px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+.btn-call:hover{
+    transition: .2s ease-in-out;
+    background: rgb(23, 61, 230);
+}
+
+
+.banner {
+    background: #edf6f9;
+
+    height: 93vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner div{
+    width: 40vw;
+    height: 70vh;
+}
+
+.textBanner{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.textBanner h2{
+    font-size: 3.2rem;
+    line-height: 50px;
+    margin-bottom: 1rem;
+}
+
+.textBanner p{
+    color: #626262;
+    width: 20vw;
+
+    margin-bottom: 1rem;
+}
+
+.textBanner button{
+    background: #4361ee;
+    color: #FFF;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    border: 0;
+    width: 200px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.textBanner button:hover{
+    transition: .2s ease-in-out;
+    background: rgb(23, 61, 230);
+}
+
+.container-figures{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.container-figures figure img{
+    width: 550px;
+    z-index: 999;
+}
+
+.cloud1, .cloud2, .cloud3{
+    position: absolute;
+}
+
+.cloud1{
+    width: 200px;
+    top: 60px; 
+}
+
+.cloud2{
+    width: 250px;
+    bottom: 60px;
+    left: 40px;
+}
+
+.cloud3{
+    width: 250px;
+    bottom: 30px;
+    right: 40px;
+}
+
+.promotions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text_header{
+    width: 72vw;
+    height: 15vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.text_header p{
+    color:  #4361ee;
+    font-size: .8rem;
+}
+
+.container-promotions{
+    width: 75vw;
+    height: 70vh;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.first-promotions{
+    width: 35vw;
+    height: 50vh;
+    border-radius: 10px;
+    margin-top: 2rem;
+
+    background: url(assets/imgs/2x/card1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    object-fit: cover;
+
+    color: #FFF;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1rem 0 1rem 1rem;   
+
+    box-shadow: #21212115 15px 15px 25px;
+}
+
+.second-promotions{
+    width: 35vw;
+    height: 35vh;
+    border-radius: 10px;
+    margin-top: 2rem;
+
+    background: url(assets/imgs/2x/card2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 0rem 0 1rem 1rem;  
+
+    box-shadow: #21212115 15px 15px 25px;
+}
+
+.second-promotions h2{
+    font-size: 2.5rem;
+    font-weight: 400;
+
+    width: 10vw;
+    line-height: 35px;
+}
+
+.Container_otherOpctions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.text_otterOptions{
+    width: 72vw;
+    height: 15vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+}
+
+.ContainerBoxs{
+    width: 72vw;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item {
+
+    width: 300px;
+    height: 150px;
+    border-radius: 10px; 
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.item .figure img{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.item .text{
+    height: 100px;
+    width: 200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding: 0 0 0 .5rem;
+}
+
+.item .text h2{
+    color: #212121;
+}
+
+.item .text p{
+    font-size: .7rem;
+    color: #5b5b5b;
+}
+
+.item .text a{
+    color: #4361ee;
+    text-decoration: none;
+}
+
+.item .text a:hover{
+    text-decoration: underline;
+}
+
+
+.container_client{
+    background: #212121;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 4rem 0 4rem 0;
+
+}
+
+.text_client{
+    width: 72vw;
+    height: 25vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text_client h2{
+    width: 30vw;
+    color: #FFF;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 45px;
+}
+
+.statitics_client{
+    width: 72vw;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.statitics_client div {
+    width: 23vw;
+    height: 15vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: #FFF;
+}
+
+.container_client button{
+    background: #4361ee;
+    color: #FFF;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    border: 0;
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.container_client button:hover{
+    transition: .2s ease-in-out;
+    background: rgb(23, 61, 230);
+}
+
+.subFooter{
+    color: #626262;
+    text-align: center;
+    height: 10vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media(max-width: 999px){
+    .banner { 
+        height: 140vh;
+        flex-direction: column;
+    }
+    
+    .banner div{
+        width: 72vw;
+        height: 50vh;
+    }
+    
+    .textBanner{
+        align-items: center;
+    }
+    
+    .textBanner h2{
+        font-size: 2.7rem;
+        text-align: center;
+    }
+    
+    .textBanner p{
+        width: 50vw;
+        text-align: center;
+    }
+    
+    .textBanner button{
+        background: #4361ee;
+        color: #FFF;
+        text-transform: uppercase;
+        cursor: pointer;
+    
+        border: 0;
+        width: 200px;
+        height: 40px;
+        border-radius: 50px;
+    }
+    
+    .container-figures{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    
+    .container-figures figure img{
+        width: 470px;
+        z-index: 999;
+    }
+    
+    .cloud1, .cloud2, .cloud3{
+        position: absolute;
+    }
+    
+    .cloud1{
+        width: 150px;
+        top: 10px; 
+        right: 150px;
+    }
+    
+    .cloud2{
+        width: 200px;
+        bottom: 30px;
+        left: 40px;
+    }
+    
+    .cloud3{
+        width: 250px;
+        bottom: 10px;
+        right: 40px;
+    }
+
+    .statitics_client div {
+        width: 23vw;
+        height: 15vh;
+
+    }
+
+    .statitics_client div p {
+        font-size: .8rem;
+    }
+    
+    .text_client h2{
+        width: 55vw;
+    }
+}
+
+@media(max-width: 710px){
+    .statitics_client div p {
+        text-align: center;
+        font-size: .7rem;
+    }
+}
+    
+
+
+@media(max-width: 500px){
+
+    .btn-call{
+        display: none;
+    }
+    
+    .promotions{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .text_header{
+        width: 72vw;
+        height: 15vh;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+    
+    .container-promotions{
+        width: 72vw;
+        height: 100vh;
+    
+        display: flex;
+        align-items: center;
+        gap: 0rem;
+    }
+    
+    .first-promotions{
+        width: 60vw;
+        height: 50vh;
+    }
+    
+    .second-promotions{
+        width: 60vw;
+        height: 35vh;
+    }
+    
+    .second-promotions h2{
+        font-size: 2.5rem;
+        font-weight: 400;
+    
+        width: 10vw;
+        line-height: 35px;
+    }
+
+    .container-figures figure img{
+        width: 370px;
+        z-index: 999;
+    }
+    
+    .cloud1, .cloud2, .cloud3{
+        position: absolute;
+    }
+    
+    .cloud1{
+        width: 100px;
+        top: 30px; 
+        right: 150px;
+    }
+    
+    .cloud2{
+        width: 150px;
+        bottom: 30px;
+        left: 20px;
+    }
+    
+    .cloud3{
+        width: 250px;
+        bottom: 10px;
+        right: -20px;
+    }
+
+
+    .container_client{
+        background: #212121;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    
+    }
+    
+    .text_client{
+        width: 72vw;
+        height: 25vh;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .text_client h2{
+        width: 72vw;
+    }
+    
+    .statitics_client{
+        width: 72vw;
+        flex-direction: column;
+    }
+    
+    .statitics_client div {
+        width: 72vw;
+    }
+
+    .subFooter p{
+        font-size: .8rem;
+    }
+
+}
+
+
+@media(max-width: 415px){
+    .container-figures figure img{
+        width: 270px;
+    }
+    
+    
+    .cloud1{
+        width: 80px;
+        top: 50px; 
+    }
+    
+    .cloud2{
+        width: 100px;
+        bottom: 70px;
+    }
+    
+    .cloud3{
+        width: 200px;
+        right: -40px;
+    }
+
+    .text_client h2{
+        width: 72vw;
+        font-size: 2.5rem;
+    }
+}
